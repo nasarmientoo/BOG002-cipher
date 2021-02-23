@@ -1,5 +1,5 @@
 const cipher = {
-  // Descifrar
+  // Cifrar
   encode: function (desplazamiento,letrain){
     var abecedario = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
     var letrain = letrain.toUpperCase();
@@ -10,7 +10,7 @@ const cipher = {
     var resultado = abecedario[letradesplazada];
     alert (resultado);
   },
-  // Cifrar
+  // Descifrar
   decode: function(){
 
   }

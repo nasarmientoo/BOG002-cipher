@@ -1,5 +1,3 @@
-import cipher from './cipher.js';
-
 function Ocultar (){
     var section1 = document.getElementById("section1");
     section1.style.display = "none"
@@ -17,17 +15,26 @@ function Continue_section2(){
     Ocultar()
     section2.style.display = "block"
 }
- 
-function Cifrar_selection(){
-    Ocultar()
-    section3.style.display = "block"
+
+function Continue_section3(){
+    var button1 = 
+    var button2 = 
+    
+    //const cifrando = document.querySelector('bcifrar')
+    //cifrando.addEventListener ('click',Continue_section3())
+
+    if(// click on button 1)
+    {
+        Ocultar()
+        section3.style.display = "block"
+    }
+    if(// click on button 2){
+        Ocultar()
+        section4.style.display = "block"
+    }
 }
  
-function Descifrar_selection(){
-    Ocultar()
-    section4.style.display = "block"
-}
- 
+//import cipher from './cipher.js';
 function GuardarDatos(){
     var des = document.getElementById("input_des").nodeValue;
     var men = document.getElementById("input_men").nodeValue;
@@ -38,9 +45,12 @@ function GuardarDatos(){
     else if (typeof des === "string"){
         alert("El desplazamiento es de tipo numerico")}
     else {
+        if 
         Ocultar()
         section5.style.display = "block" 
         cipher.encode(des, men)
     }
+    
+    
 }
 
