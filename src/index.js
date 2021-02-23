@@ -40,7 +40,7 @@ function GuardarDatos(){
     else {
         Ocultar()
         section5.style.display = "block" 
-        cipher(des, men)
+        cipher.encode(des, men)
     }
 }
 
