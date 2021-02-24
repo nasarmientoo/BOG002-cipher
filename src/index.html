@@ -2,35 +2,33 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
-  <script src="index.js"></script>
+  <script src="main.js"></script>
   <title>Vigenére</title>
 </head>
 <body>
   <section id = "section1">
     <h1> VIGENÉRE </h1>
-    <p>"Descripción de la pagina"</p>
-    <button onclick="Continue_section2()">Continuar</button>
+    <p>"Aqui podras cifrar o descifrar tus mensajes"</p>
+    <button onclick= "Continue_section2()" >Continuar</button>
     <!--<img src = "x">-->
   </section>
  
   <section id = "section2">
     <h1> VIGENÉRE </h1>
-    <p>Elige una opción</p>
-    <button onclick="Continue_section3()" id = "bcifrar"> Cifrar </button>
-    <button onclick="Continue_section3()" id = "bdescifrar" > Descifrar </button>
+    <p>¿Que quieres hacer hoy</p>
+    <button onclick = "Continue_section3()"> Cifrar </button>
+    <button  onclick = "Continue_section4()"> Descifrar </button>
     <!--<img src = "x"> -->
   </section>
  
   <section id = "section3">
-    <h1> Ingresa tu mensaje a ser cifrado </h1>
-    <p> Elige el desplazamiento </p>
-    <input id = input_des>
- 
-    <p> Escribe tu mensaje</p>
-    <input id = input_men>
- 
-    <button onclick="GuardarDatos()">
-    Continuar</button>
+    <h1> VIGENÉRE </h1>
+    <p> Elige el desplazamiento de tu mensaje </p>
+    <input id = 'input_des' type="text">
+    <p> Ingresa el mensaje que quieres descubrir</p>
+    <input id = 'input_men' type="text">
+    <button id = 'valoresIniciales' name = 'boton' >Descubir mensaje </button><br>
+    <button onclick = "Continue_section2()">Volver</button> 
   </section>
  
   <section id = "section4">
@@ -47,6 +45,10 @@
     <p>prueba 2 con Ana</p>
  
  
+    <h1> VIGENÉRE </h1>
+    <p>Tu mensaje es: </p>
+    <label for="resultado"></label>
+    <button onclick = "Continue_section2()">Volver</button>
   </section>
   
  

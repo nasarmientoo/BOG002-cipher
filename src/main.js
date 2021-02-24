@@ -7,8 +7,6 @@ function Ocultar (){
     section3.style.display = "none"
     var section4 = document.getElementById("section4");
     section4.style.display = "none"
-    var section5 = document.getElementById("section5");
-    section5.style.display = "none"
 }
  
 function Continue_section2(){
@@ -17,25 +15,16 @@ function Continue_section2(){
 }
 
 function Continue_section3(){
-    var button1 = 
-    var button2 = 
-    
-    //const cifrando = document.querySelector('bcifrar')
-    //cifrando.addEventListener ('click',Continue_section3())
-
-    if(// click on button 1)
-    {
-        Ocultar()
-        section3.style.display = "block"
-    }
-    if(// click on button 2){
-        Ocultar()
-        section4.style.display = "block"
-    }
+    Ocultar()
+    section3.style.display = "block"
 }
- 
-//import cipher from './cipher.js';
-function GuardarDatos(){
+
+function Continue_section4(){
+    Ocultar()
+    section4.style.display = "block"   
+}
+
+/*function GuardarDatos(){
     var des = document.getElementById("input_des").nodeValue;
     var men = document.getElementById("input_men").nodeValue;
     if (des === "" || men === ""){
@@ -49,8 +38,6 @@ function GuardarDatos(){
         Ocultar()
         section5.style.display = "block" 
         cipher.encode(des, men)
-    }
-    
-    
-}
+    }    
+}*/
 
