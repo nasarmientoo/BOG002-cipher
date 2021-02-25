@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="style.css">
-  <script src="main.js"></script>
+  <link rel='stylesheet' href='style.css'>
   <title>Vigenére</title>
 </head>
 <body>
-  <section id = "section1">
+  <section id = 'section1'>
     <h1> VIGENÉRE </h1>
-    <p>"Aqui podras cifrar o descifrar tus mensajes"</p>
-    <button onclick= "Continue_section2()" >Continuar</button>
-    <!--<img src = "x">-->
+    <p>Aqui podras cifrar o descifrar tus mensajes</p>
+    <button id = 'Boton1' >Continuar</button>
+    <!--<img src = 'x'>-->
   </section>
  
-  <section id = "section2">
+  <section id = 'section2'>
     <h1> VIGENÉRE </h1>
     <p>¿Que quieres hacer hoy</p>
-    <button onclick = "Continue_section3()"> Cifrar </button>
-    <button  onclick = "Continue_section4()"> Descifrar </button>
-    <!--<img src = "x"> -->
+    <button id = 'Boton2'> Cifrar </button>
+    <button id = 'Boton3'> Descifrar </button>
+    <!--<img src = 'x'> -->
   </section>
  
-  <section id = "section3">
+  <section id = 'section3'>
     <h1> VIGENÉRE </h1>
     <p> Elige el desplazamiento de tu mensaje </p>
-    <input id = 'input_des' type="text">
+    <input id = 'input_des' type='text'>
     <p> Ingresa el mensaje que quieres descubrir</p>
-    <input id = 'input_men' type="text">
-    <button id = 'valoresIniciales' name = 'boton' >Descubir mensaje </button><br>
-    <button onclick = "Continue_section2()">Volver</button> 
+    <input  id = 'input_men' type='text'>
+    <button id = 'Boton4'>Encriptar mensaje </button><br>
+    <button id = 'Boton5'>Volver</button> 
   </section>
  
-  <section id = "section4">
+  <section id = 'section4'>
     <h1> VIGENÉRE </h1>
-    <p>Tu mensaje es: </p>
-    <label for="resultado"></label>
-    <button onclick = "Continue_section2()">Volver</button>
+    <p>Escribe el mensaje que quieres descifrar: </p>
+    <input id ='input_men2'></input>
+    <p>Elige el desplazamiento </p>
+    <input id = 'input_des2'></input>
+    <button id = 'Boton6'>Descubrir mensaje</button>
+    <button id = 'Boton7'>Volver</button>
   </section>
  
+  <section id = 'section5'>
+    <h1> VIGENÉRE </h1>
+    <p>Tu mensaje es:</p>
+    <p id = 'resultado' ></p>
+    <button id = 'Boton8'>Volver</button>
+  </section>
+
+<script type = module src='main.js'></script>
 </body>
 </html>
