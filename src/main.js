@@ -1,55 +1,64 @@
-import cipher from "./cipher.js";
+import cipher from './cipher.js';
 
-document.getElementById("Boton1").addEventListener("click",Continue_section2);
-document.getElementById("Boton2").addEventListener("click",Continue_section3);
-document.getElementById("Boton3").addEventListener("click",Continue_section4);
-document.getElementById("Boton5").addEventListener("click",Continue_section2);
-document.getElementById("Boton7").addEventListener("click",Continue_section2);
-document.getElementById("Boton8").addEventListener("click",Continue_principal);
-document.getElementById ("Boton4").addEventListener("click",cipher.encode);
-document.getElementById ("Boton4").addEventListener("click",Continue_section5);
-document.getElementById ("Boton6").addEventListener("click",cipher.decode);
-document.getElementById ("Boton7").addEventListener("click",Continue_section5);
+document.getElementById('Boton1').addEventListener('click',continueSection2);
+document.getElementById('Boton2').addEventListener('click',continueSection3);
+document.getElementById('Boton3').addEventListener('click',continueSection4);
+document.getElementById('Boton4').addEventListener('click',cipher.encode);
+document.getElementById('Boton4').addEventListener('click',continueSection5);
+document.getElementById('Boton5').addEventListener('click',continueSection2);
+document.getElementById('Boton5').addEventListener('click',cleanImput);
+document.getElementById('Boton6').addEventListener('click',cipher.decode);
+document.getElementById('Boton6').addEventListener('click',continueSection5);
+document.getElementById('Boton7').addEventListener('click',continueSection2);
+document.getElementById('Boton7').addEventListener('click',cleanImput);
+document.getElementById('Boton8').addEventListener('click',continuePrincipal);
+document.getElementById('Boton8').addEventListener('click',cleanImput);
+
 
 function Ocultar (){
-    var section1 = document.getElementById("section1");
-    section1.style.display = "none"
-    var section2 = document.getElementById("section2");
-    section2.style.display = "none"
-    var section3 = document.getElementById("section3");
-    section3.style.display = "none"
-    var section4 = document.getElementById("section4");
-    section4.style.display = "none"
-    var section5 = document.getElementById("section5");
-    section5.style.display = "none"
+    var section1 = document.getElementById('section1');
+    section1.style.display = 'none'
+    var section2 = document.getElementById('section2');
+    section2.style.display = 'none'
+    var section3 = document.getElementById('section3');
+    section3.style.display = 'none'
+    var section4 = document.getElementById('section4');
+    section4.style.display = 'none'
+    var section5 = document.getElementById('section5');
+    section5.style.display = 'none'
 }
 
-function Continue_principal(){
+function continuePrincipal(){
     Ocultar()
-    section1.style.display = "block"
+    section1.style.display = 'block'
 }
 
-function Continue_section2(){
+function continueSection2(){
     Ocultar()
-    section2.style.display = "block"
+    section2.style.display = 'block'
 }
 
-function Continue_section3(){
+function continueSection3(){
     Ocultar()
-    section3.style.display = "block"
+    section3.style.display = 'block'
 }
 
-function Continue_section4(){
+function continueSection4(){
     Ocultar()
-    section4.style.display = "block"   
+    section4.style.display = 'block'   
 }
 
-function Continue_section5(){
+function continueSection5(){
     Ocultar()
-    section5.style.display = "block"   
+    section5.style.display = 'block'   
 }
 
-
-
-
+function cleanImput(){
+    var allInputs = document.getElementsByTagName('input')
+    for (var i = 0; i < allInputs.length; i++){
+        var input = allInputs[i];
+        if(input !== '')
+         input.value = '';
+    }
+}
 
