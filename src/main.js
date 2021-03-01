@@ -5,6 +5,7 @@ document.getElementById('Boton2').addEventListener('click',continueSection3);
 document.getElementById('Boton3').addEventListener('click',continueSection4);
 document.getElementById('Boton4').addEventListener('click',cipher.encode);
 document.getElementById('Boton4').addEventListener('click',continueSection5);
+//document.getElementById('Boton4').addEventListener('click',imputValidate('input_men','input_des'));
 document.getElementById('Boton5').addEventListener('click',continueSection2);
 document.getElementById('Boton5').addEventListener('click',cleanImput);
 document.getElementById('Boton6').addEventListener('click',cipher.decode);
@@ -62,3 +63,11 @@ function cleanImput(){
     }
 }
 
+/*function imputValidate(m,d){
+    var mensaje = document.getElementById(m).value;
+    var desplazamiento= document.getElementById(d).value;
+
+    if(mensaje === '' || desplazamiento === '' ){
+       alert ("Faltan espacios por rellenar")
+    }   
+}*/
