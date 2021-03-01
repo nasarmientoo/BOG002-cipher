@@ -1,5 +1,4 @@
 let abecedario = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
-
 const cipher = {
     // Cifrar
     encode: function(){
@@ -19,8 +18,14 @@ const cipher = {
 
       let mensajeCifrado = nuevaPosicionLetra.join ('');
       console.log (mensajeCifrado)
+      var mensajeEnPantalla = document.createElement ('p')
+      var textoMensajeEnPantalla = document.createTextNode(mensajeCifrado);
+      mensajeEnPantalla.appendChild (textoMensajeEnPantalla)
+      document.getElementById ('mensaje').appendChild(mensajeEnPantalla);
+      //imprimirRsultado ();
+      
     },
-
+        
     //Descifrar
     decode: function (){ 
       var mensaje = document.getElementById('input_men2').value;
@@ -39,7 +44,7 @@ const cipher = {
 
       let mensajeDesCifrado = nuevaPosicionLetra.join ('');
       console.log (mensajeDesCifrado)
+     
     }
 };
-
 export default cipher;

@@ -49,6 +49,13 @@ function Continue_section5(){
     section5.style.display = "block"   
 }
 
+//function imprimirRsultado () {
+
+   // var mensajeEnPantalla = document.createElement ('p')
+   // var textoMensajeEnPantalla = document.createTextNode(mensajeCifrado);
+   // mensajeEnPantalla.appendChild (textoMensajeEnPantalla)
+   // document.getElementById ('mensaje').appendChild(mensajeEnPantalla);
+
 
 
 
