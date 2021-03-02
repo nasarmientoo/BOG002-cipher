@@ -19,13 +19,10 @@ const cipher = {
 
       let mensajeCifrado = nuevaPosicionLetra.join ('');
       console.log (mensajeCifrado)
-      var mensajeEnPantalla = document.createElement ('p')
-      //mensajeEnPantalla.setAttribute('id','mensajeEnpantalla')  //dar un id al elemnto creado
-      var textoMensajeEnPantalla = document.createTextNode(mensajeCifrado);
+      let mensajeEnPantalla = document.createElement ('p')
+      let textoMensajeEnPantalla = document.createTextNode(mensajeCifrado);
       mensajeEnPantalla.appendChild (textoMensajeEnPantalla)
       document.getElementById ('mensaje').appendChild(mensajeEnPantalla);
-      //imprimirRsultado ();
-      
     },
         
     //Descifrar
@@ -46,11 +43,10 @@ const cipher = {
 
       let mensajeDesCifrado = nuevaPosicionLetra.join ('');
       console.log (mensajeDesCifrado)
-      var mensajeEnPantalla2 = document.createElement ('p')
-      var textoMensajeEnPantalla2 = document.createTextNode(mensajeDesCifrado);
+      let mensajeEnPantalla2 = document.createElement ('p')
+      let textoMensajeEnPantalla2 = document.createTextNode(mensajeDesCifrado);
       mensajeEnPantalla2.appendChild (textoMensajeEnPantalla2)
-      document.getElementById ('mensaje').appendChild(mensajeEnPantalla2);
-     
+      document.getElementById ('mensaje2').appendChild(mensajeEnPantalla2);
     }
 };
 export default cipher;
