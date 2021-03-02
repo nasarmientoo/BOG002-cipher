@@ -2,58 +2,65 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
-  <title>Lockers</title>
+  <title>Captcha</title>
 </head>
 <body>
-  <section id = "section1">
-    <div class="centered"> 
-      <h1 class = "titulo"> CAPTCHA </h1>
-      <p>Aqui podras cifrar o descifrar tus mensajes</p>
-      <button id = "Boton1" >Continuar</button>
-      <!--<img src = "x">-->
-    </div>    
+ <section id = "section1">
+  <div class="split right"> 
+    <!--<img src = "x">-->
+  </div>
+  <div class="split left">
+    <h1 class = "titulo"> CAPTCHA </h1>
+    <p class="parrafo">Aqui podras cifrar o descifrar mensajes ocultos que quieras enviar o recibir</p>
+    <button class="boton1" id = "Boton1" >Continuar</button> 
   </section>
- 
+
   <section id = "section2">
-    <div class="centered"> 
-    <h1> CAPTCHA </h1>
-      <p>¿Que quieres hacer hoy</p>
-      <button id = "Boton2"> Cifrar </button>
-      <button id = "Boton3"> Descifrar </button>
+    <div class="centeredR"> 
+    <h1 class = "titulo"> CAPTCHA </h1>
+      <p class = "parrafo">¿Que quieres hacer hoy?</p>
+      <button id = "Boton2" class = "boton1" > Cifrar    </button>
+      <button id = "Boton3" class = "boton1" > Descifrar </button>
       <!--<img src = "x"> -->
     </div>    
   </section>
  
   <section id = "section3" class = "cipher">
+    <div class = "rectangulo">
+      <h1 class = "tituloC"> ENCODE </h1>
+    </div>
     <div class="centered"> 
-      <h1> CATPCHA </h1>
-      <p> Ingresa el mensaje que quieres descubrir</p>
-      <input type = "text" id = "input_men"><br>
-      <p> Elige el desplazamiento de tu mensaje </p>
-      <input type ="number" id = "input_des">
-      <button id = "Boton4">Encriptar mensaje </button><br>
-      <button id = "Boton5">Volver</button>
-    </div>     
+      <p class="parrafoC"> Ingresa el mensaje que quieres descubrir</p>
+      <input type = "text" id = "input_men" class = "inputT"><br>
+      <p class="parrafoC"> Elige el desplazamiento de tu mensaje </p>
+      <input type ="number" id = "input_des" class = "inputD"><br>
+      <button id = "Boton4" class = "boton2">Encriptar mensaje </button><br>
+      <button id = "Boton5" class = "boton2">Volver</button>
+    </div>
   </section>
  
-  <section id = "section4">
+  <section id = "section4" class="cipher">
+  <div class = "rectangulo">
+    <h1 class = "tituloC"> DECODE </h1>
+  </div>
     <div class="centered"> 
-      <h1> CATPCHA </h1>
-      <p>Escribe el mensaje que quieres descifrar: </p>
-      <input type = "text" id ="input_men2"></input>
-      <p>Elige el desplazamiento </p>
-      <input type ="number" id = "input_des2"></input><br>
-      <button id = "Boton6">Descubrir mensaje</button><br>
-      <button id = "Boton7">Volver</button>
+      <p class="parrafoC" >Escribe el mensaje que quieres descifrar: </p>
+      <input type = "text" id ="input_men2" class = "inputT" ></input>
+      <p class="parrafoC" >Elige el desplazamiento </p>
+      <input type ="number" id = "input_des2" class = "inputD"></input><br>
+      <button id = "Boton6" class = "boton2">Descubrir mensaje</button><br>
+      <button id = "Boton7" class = "boton2">Volver</button>
     </div>    
   </section>
   
-  <section id = "section5">
-    <div class="centered"> 
-      <h1> CATPCHA </h1>
-      <p>Tu mensaje es:</p>
-      <p id = "mensaje" ></p>
-      <button id = "Boton8" onclick="location.reload()">Página principal</button>
+  <section id = "section5" class="cipher">
+    <div class="centeredR"> 
+      <h1 class = "tituloR"> CATPCHA </h1>
+      <p class = "parrafoC">Tu mensaje es:</p>
+      <div class = "rectanguloR">
+        <p id = "mensaje" ></p>
+      </div>
+      <button id = "Boton8" class = "boton2" onclick="location.reload()" >Página principal</button>
     </div>    
   </section>
 

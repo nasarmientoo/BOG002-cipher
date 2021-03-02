@@ -1,4 +1,4 @@
-let abecedario = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',' ']
+let abecedario = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','']
 
 const cipher = {
     // Cifrar
@@ -40,13 +40,14 @@ const cipher = {
           let letradesplazada = (abecedario[indiceDesplazado])
           nuevaPosicionLetra.push (letradesplazada);         
       }
-
       let mensajeDesCifrado = nuevaPosicionLetra.join ('');
       console.log (mensajeDesCifrado)
       let mensajeEnPantalla2 = document.createElement ('p')
       let textoMensajeEnPantalla2 = document.createTextNode(mensajeDesCifrado);
       mensajeEnPantalla2.appendChild (textoMensajeEnPantalla2)
-      document.getElementById ('mensaje2').appendChild(mensajeEnPantalla2);
+      document.getElementById ('mensaje').appendChild(mensajeEnPantalla2);
+
+      
     }
 };
 

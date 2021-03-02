@@ -12,6 +12,7 @@ document.getElementById('Boton7').addEventListener('click',continueSection2);
 document.getElementById('Boton8').addEventListener('click',continuePrincipal);
 
 
+
 function Ocultar (){
     var section1 = document.getElementById('section1');
     section1.style.display = 'none'
