@@ -1,21 +1,42 @@
 #section1{
-    display: block;   
+    display: block; 
+    background-color: #fdd05a;
+    height: 100vh;
+    
+        
   }
-  
-  #section2{
+.titulo {
+  font-family: "papyrus";
+}
+     
+ #section2{
     display: none;
+  
   }
   
-  #section3{
+ #section3{
     display: none
   }
   
-  #section4{
+ #section4{
     display: none
   }
   
-  #section5{
+ #section5{
     display: none
   }
   
- 
+  .centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .cipher{
+    background-color: #1c2529;
+    height: 100vh;
+  }
+  

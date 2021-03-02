@@ -12,13 +12,17 @@ const cipher = {
         
       for (var i = 0;i<arregloMensaje.length;i++) {
           let posicionletra = abecedario.indexOf(arregloMensaje [i])
-          let indiceDesplazado = (posicionletra+desplazamiento)%26;
+          let indiceDesplazado = (posicionletra+desplazamiento)%27;
           let letradesplazada = (abecedario[indiceDesplazado])
           nuevaPosicionLetra.push (letradesplazada);   
       }
 
       let mensajeCifrado = nuevaPosicionLetra.join ('');
       console.log (mensajeCifrado)
+      let mensajeEnPantalla = document.createElement ('p')
+      let textoMensajeEnPantalla = document.createTextNode(mensajeCifrado);
+      mensajeEnPantalla.appendChild (textoMensajeEnPantalla)
+      document.getElementById ('mensaje').appendChild(mensajeEnPantalla);
     },
 
     //Descifrar
@@ -32,13 +36,17 @@ const cipher = {
       
       for (var i = 0;i<arregloMensaje.length;i++) {
           let posicionletra = abecedario.indexOf(arregloMensaje [i])
-          let indiceDesplazado = (posicionletra+desplazamiento)%26;
+          let indiceDesplazado = (posicionletra-desplazamiento)%27;
           let letradesplazada = (abecedario[indiceDesplazado])
           nuevaPosicionLetra.push (letradesplazada);         
       }
 
       let mensajeDesCifrado = nuevaPosicionLetra.join ('');
       console.log (mensajeDesCifrado)
+      let mensajeEnPantalla2 = document.createElement ('p')
+      let textoMensajeEnPantalla2 = document.createTextNode(mensajeDesCifrado);
+      mensajeEnPantalla2.appendChild (textoMensajeEnPantalla2)
+      document.getElementById ('mensaje2').appendChild(mensajeEnPantalla2);
     }
 };
 
