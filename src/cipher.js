@@ -1,4 +1,5 @@
-let abecedario = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+let abecedario = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',' ']
+
 const cipher = {
     // Cifrar
     encode: function(){
@@ -11,7 +12,7 @@ const cipher = {
         
       for (var i = 0;i<arregloMensaje.length;i++) {
           let posicionletra = abecedario.indexOf(arregloMensaje [i])
-          let indiceDesplazado = (posicionletra+desplazamiento)%26;
+          let indiceDesplazado = (posicionletra+desplazamiento)%27;
           let letradesplazada = (abecedario[indiceDesplazado])
           nuevaPosicionLetra.push (letradesplazada);   
       }
@@ -19,6 +20,7 @@ const cipher = {
       let mensajeCifrado = nuevaPosicionLetra.join ('');
       console.log (mensajeCifrado)
       var mensajeEnPantalla = document.createElement ('p')
+      //mensajeEnPantalla.setAttribute('id','mensajeEnpantalla')  //dar un id al elemnto creado
       var textoMensajeEnPantalla = document.createTextNode(mensajeCifrado);
       mensajeEnPantalla.appendChild (textoMensajeEnPantalla)
       document.getElementById ('mensaje').appendChild(mensajeEnPantalla);
@@ -37,13 +39,17 @@ const cipher = {
       
       for (var i = 0;i<arregloMensaje.length;i++) {
           let posicionletra = abecedario.indexOf(arregloMensaje [i])
-          let indiceDesplazado = (posicionletra+desplazamiento)%26;
+          let indiceDesplazado = (posicionletra-desplazamiento)%27;
           let letradesplazada = (abecedario[indiceDesplazado])
           nuevaPosicionLetra.push (letradesplazada);         
       }
 
       let mensajeDesCifrado = nuevaPosicionLetra.join ('');
       console.log (mensajeDesCifrado)
+      var mensajeEnPantalla2 = document.createElement ('p')
+      var textoMensajeEnPantalla2 = document.createTextNode(mensajeDesCifrado);
+      mensajeEnPantalla2.appendChild (textoMensajeEnPantalla2)
+      document.getElementById ('mensaje').appendChild(mensajeEnPantalla2);
      
     }
 };
