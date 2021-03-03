@@ -132,13 +132,12 @@
   background: #f1edc5;
 }
  .inputT {
-  border: 0.2rem solid #fdd05a;
   padding: 8rem;
+  color: #f1edc5;
 
  }
  .inputD {
-  border: 0.2rem solid #fdd05a;
   padding: 1rem;
-
+  color: #f1edc5;
  }
 

@@ -9,12 +9,16 @@ const cipher = {
       var desplazamiento =  document.getElementById('input_des').value
       desplazamiento = parseInt(desplazamiento)
       let nuevaPosicionLetra = []
-        
+      
       for (var i = 0;i<arregloMensaje.length;i++) {
-          let posicionletra = abecedario.indexOf(arregloMensaje [i])
+        if (abecedario.indexOf(arregloMensaje[i]) != -1 ){
+          let posicionletra = abecedario.indexOf(arregloMensaje[i])
           let indiceDesplazado = (posicionletra+desplazamiento)%27;
           let letradesplazada = (abecedario[indiceDesplazado])
-          nuevaPosicionLetra.push (letradesplazada);   
+          nuevaPosicionLetra.push (letradesplazada);
+        }else{
+          nuevaPosicionLetra.push(arregloMensaje[i])
+        }
       }
 
       let mensajeCifrado = nuevaPosicionLetra.join ('');
@@ -35,11 +39,16 @@ const cipher = {
       let nuevaPosicionLetra = []
       
       for (var i = 0;i<arregloMensaje.length;i++) {
-          let posicionletra = abecedario.indexOf(arregloMensaje [i])
-          let indiceDesplazado = (posicionletra-desplazamiento)%27;
+        if (abecedario.indexOf(arregloMensaje[i]) != -1 ){
+          let posicionletra = abecedario.indexOf(arregloMensaje[i])
+          let indiceDesplazado = (posicionletra-desplazamiento)%27;ñ
           let letradesplazada = (abecedario[indiceDesplazado])
-          nuevaPosicionLetra.push (letradesplazada);         
+          nuevaPosicionLetra.push (letradesplazada);
+        }else{
+          nuevaPosicionLetra.push(arregloMensaje[i])
+        }
       }
+
       let mensajeDesCifrado = nuevaPosicionLetra.join ('');
       console.log (mensajeDesCifrado)
       let mensajeEnPantalla2 = document.createElement ('p')
