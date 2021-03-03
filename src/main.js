@@ -28,11 +28,13 @@ function Ocultar (){
 function continuePrincipal(){
     Ocultar()
     section1.style.display = 'block'
+    footer.style.display = 'block';
 }
 
 function continueSection2(){
     Ocultar()
     section2.style.display = 'block'
+    footer.style.display = 'block'
 }
 
 function continueSection3(){
