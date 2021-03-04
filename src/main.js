@@ -11,18 +11,17 @@ document.getElementById('Boton6').addEventListener('click',continueSection5);
 document.getElementById('Boton7').addEventListener('click',continueSection2);
 document.getElementById('Boton8').addEventListener('click',continuePrincipal);
 
-
+var section1 = document.getElementById('section1');
+var section2 = document.getElementById('section2');
+var section3 = document.getElementById('section3');
+var section4 = document.getElementById('section4');
+var section5 = document.getElementById('section5');
 
 function Ocultar (){
-    var section1 = document.getElementById('section1');
     section1.style.display = 'none'
-    var section2 = document.getElementById('section2');
     section2.style.display = 'none'
-    var section3 = document.getElementById('section3');
     section3.style.display = 'none'
-    var section4 = document.getElementById('section4');
     section4.style.display = 'none'
-    var section5 = document.getElementById('section5');
     section5.style.display = 'none'
 }
 

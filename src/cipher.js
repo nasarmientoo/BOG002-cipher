@@ -1,4 +1,12 @@
-let abecedario = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','']
+let abecedario = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',]
+
+function mostrar(x){
+  let mensajeCifrado = x.join ('');
+  let mensajeEnPantalla = document.createElement ('p')
+  let textoMensajeEnPantalla = document.createTextNode(mensajeCifrado);
+  mensajeEnPantalla.appendChild (textoMensajeEnPantalla)
+  document.getElementById ('mensaje').appendChild(mensajeEnPantalla);
+}
 
 const cipher = {
     // Cifrar
@@ -9,55 +17,41 @@ const cipher = {
       var desplazamiento =  document.getElementById('input_des').value
       desplazamiento = parseInt(desplazamiento)
       let nuevaPosicionLetra = []
-      
+
       for (var i = 0;i<arregloMensaje.length;i++) {
-        if (abecedario.indexOf(arregloMensaje[i]) != -1 ){
+        if (abecedario.includes(arregloMensaje[i])){
           let posicionletra = abecedario.indexOf(arregloMensaje[i])
-          let indiceDesplazado = (posicionletra+desplazamiento)%27;
+          let indiceDesplazado = (posicionletra+desplazamiento)%abecedario.length;
           let letradesplazada = (abecedario[indiceDesplazado])
           nuevaPosicionLetra.push (letradesplazada);
         }else{
           nuevaPosicionLetra.push(arregloMensaje[i])
         }
       }
-
-      let mensajeCifrado = nuevaPosicionLetra.join ('');
-      console.log (mensajeCifrado)
-      let mensajeEnPantalla = document.createElement ('p')
-      let textoMensajeEnPantalla = document.createTextNode(mensajeCifrado);
-      mensajeEnPantalla.appendChild (textoMensajeEnPantalla)
-      document.getElementById ('mensaje').appendChild(mensajeEnPantalla);
+      mostrar(nuevaPosicionLetra);           
     },
-
+        
     //Descifrar
     decode: function (){ 
-      var mensaje = document.getElementById('input_men2').value;
+      let mensaje = document.getElementById('input_men2').value;
       mensaje = mensaje.toUpperCase ();
-      var arregloMensaje = mensaje.split ('')
-      var desplazamiento =  document.getElementById('input_des2').value
+      let arregloMensaje = mensaje.split ('')
+
+      let desplazamiento =  document.getElementById('input_des2').value
       desplazamiento = parseInt(desplazamiento)
       let nuevaPosicionLetra = []
       
       for (var i = 0;i<arregloMensaje.length;i++) {
-        if (abecedario.indexOf(arregloMensaje[i]) != -1 ){
+        if (abecedario.includes(arregloMensaje[i])){
           let posicionletra = abecedario.indexOf(arregloMensaje[i])
-          let indiceDesplazado = (posicionletra-desplazamiento)%27;ñ
+          let indiceDesplazado = (posicionletra - (desplazamiento % 26 - 26)) % abecedario.length
           let letradesplazada = (abecedario[indiceDesplazado])
-          nuevaPosicionLetra.push (letradesplazada);
-        }else{
+          nuevaPosicionLetra.push(letradesplazada);
+        } else {
           nuevaPosicionLetra.push(arregloMensaje[i])
         }
       }
-
-      let mensajeDesCifrado = nuevaPosicionLetra.join ('');
-      console.log (mensajeDesCifrado)
-      let mensajeEnPantalla2 = document.createElement ('p')
-      let textoMensajeEnPantalla2 = document.createTextNode(mensajeDesCifrado);
-      mensajeEnPantalla2.appendChild (textoMensajeEnPantalla2)
-      document.getElementById ('mensaje').appendChild(mensajeEnPantalla2);
-
-      
+      mostrar(nuevaPosicionLetra);      
     }
 };
-
 export default cipher;

@@ -24,6 +24,11 @@
   display: none
 }
 
+footer {
+  background-color: black;
+}
+
+
 .titulo {
   font-family: "Bahnschrift SemiBold";
   font-size: 90px;
@@ -133,11 +138,12 @@
 }
  .inputT {
   padding: 8rem;
-  color: #f1edc5;
-
+  background: #f1edc5;
+  color: #1c2529;
  }
  .inputD {
   padding: 1rem;
-  color: #f1edc5;
+  background: #f1edc5;
+  color:#1c2529;
  }
 
