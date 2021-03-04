@@ -1,22 +1,13 @@
 let abecedario = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',]
 
-function mostrar(x){
-  let mensajeCifrado = x.join ('');
-  let mensajeEnPantalla = document.createElement ('p')
-  let textoMensajeEnPantalla = document.createTextNode(mensajeCifrado);
-  mensajeEnPantalla.appendChild (textoMensajeEnPantalla)
-  document.getElementById ('mensaje').appendChild(mensajeEnPantalla);
-}
-
 const cipher = {
     // Cifrar
-    encode: function(){
-      var mensaje = document.getElementById('input_men').value;
-      mensaje = mensaje.toUpperCase ();
-      var arregloMensaje = mensaje.split ('')
-      var desplazamiento =  document.getElementById('input_des').value
+    encode: function(mensaje, desplazamiento){
+      //mensaje = mensaje + '';
+      var arregloMensaje = mensaje.toUpperCase().split ('')
       desplazamiento = parseInt(desplazamiento)
       let nuevaPosicionLetra = []
+      let mensajeCifrado = ''
 
       for (var i = 0;i<arregloMensaje.length;i++) {
         if (abecedario.includes(arregloMensaje[i])){
@@ -26,20 +17,19 @@ const cipher = {
           nuevaPosicionLetra.push (letradesplazada);
         }else{
           nuevaPosicionLetra.push(arregloMensaje[i])
-        }
+        }     
+         mensajeCifrado = nuevaPosicionLetra.join('')
       }
-      mostrar(nuevaPosicionLetra);           
+      return mensajeCifrado;           
     },
         
     //Descifrar
-    decode: function (){ 
-      let mensaje = document.getElementById('input_men2').value;
-      mensaje = mensaje.toUpperCase ();
-      let arregloMensaje = mensaje.split ('')
-
-      let desplazamiento =  document.getElementById('input_des2').value
+    decode: function (mensaje, desplazamiento){  
+     // mensaje = mensaje + '';
+      let arregloMensaje = mensaje.toUpperCase().split ('')
       desplazamiento = parseInt(desplazamiento)
       let nuevaPosicionLetra = []
+      let mensajeCifrado = ''
       
       for (var i = 0;i<arregloMensaje.length;i++) {
         if (abecedario.includes(arregloMensaje[i])){
@@ -50,8 +40,10 @@ const cipher = {
         } else {
           nuevaPosicionLetra.push(arregloMensaje[i])
         }
+        
+        mensajeCifrado = nuevaPosicionLetra.join('')
       }
-      mostrar(nuevaPosicionLetra);      
+      return mensajeCifrado;     
     }
 };
 export default cipher;

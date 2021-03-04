@@ -3,10 +3,10 @@ import cipher from './cipher.js';
 document.getElementById('Boton1').addEventListener('click',continueSection2);
 document.getElementById('Boton2').addEventListener('click',continueSection3);
 document.getElementById('Boton3').addEventListener('click',continueSection4);
-document.getElementById('Boton4').addEventListener('click',cipher.encode);
+document.getElementById('Boton4').addEventListener('click',mostrarE);
 document.getElementById('Boton4').addEventListener('click',continueSection5);
 document.getElementById('Boton5').addEventListener('click',continueSection2);
-document.getElementById('Boton6').addEventListener('click',cipher.decode);
+document.getElementById('Boton6').addEventListener('click',mostrarD);
 document.getElementById('Boton6').addEventListener('click',continueSection5);
 document.getElementById('Boton7').addEventListener('click',continueSection2);
 document.getElementById('Boton8').addEventListener('click',continuePrincipal);
@@ -48,6 +48,22 @@ function continueSection4(){
 function continueSection5(){
     Ocultar()
     section5.style.display = 'block'   
+}
+
+function mostrarE(){
+    var mensajeE = document.getElementById('input_men').value;
+    var desplazamientoE = document.getElementById('input_des').value;        
+    var mensajeFinal = document.getElementById('mensajeFinal');
+
+    mensajeFinal.innerHTML = cipher.encode(mensajeE,desplazamientoE)
+}
+
+function mostrarD(){
+    let mensajeD = document.getElementById('input_men2').value;
+    let desplazamientoD =  document.getElementById('input_des2').value;
+    var mensajeFinal = document.getElementById('mensajeFinal');
+
+    mensajeFinal.innerHTML = cipher.decode(mensajeD,desplazamientoD)
 }
 
 /*function cleanImput(){
