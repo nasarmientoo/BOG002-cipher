@@ -3,7 +3,7 @@ let abecedario = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P
 const cipher = {
     // Cifrar
     encode: function(mensaje, desplazamiento){
-      //mensaje = mensaje + '';
+      // mensaje = mensaje + '';
       var arregloMensaje = mensaje.toUpperCase().split ('')
       desplazamiento = parseInt(desplazamiento)
       let nuevaPosicionLetra = []
@@ -25,7 +25,7 @@ const cipher = {
         
     //Descifrar
     decode: function (mensaje, desplazamiento){  
-     // mensaje = mensaje + '';
+      // mensaje = mensaje + '';
       let arregloMensaje = mensaje.toUpperCase().split ('')
       desplazamiento = parseInt(desplazamiento)
       let nuevaPosicionLetra = []
