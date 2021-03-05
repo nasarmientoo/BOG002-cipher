@@ -17,6 +17,7 @@ var section3 = document.getElementById('section3');
 var section4 = document.getElementById('section4');
 var section5 = document.getElementById('section5');
 
+
 function Ocultar (){
     section1.style.display = 'none'
     section2.style.display = 'none'
@@ -28,26 +29,31 @@ function Ocultar (){
 function continuePrincipal(){
     Ocultar()
     section1.style.display = 'block'
+    
 }
 
 function continueSection2(){
     Ocultar()
     section2.style.display = 'block'
+    
 }
 
 function continueSection3(){
     Ocultar()
     section3.style.display = 'block'
+    
 }
 
 function continueSection4(){
     Ocultar()
-    section4.style.display = 'block'   
+    section4.style.display = 'block'  
+    
 }
 
 function continueSection5(){
     Ocultar()
-    section5.style.display = 'block'   
+    section5.style.display = 'block'  
+    
 }
 
 function mostrarE(){

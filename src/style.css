@@ -25,35 +25,41 @@
 }
 
 footer {
-  background-color: black;
+  background-color:#dfac2b;
+  font-family: 'Jura', sans-serif;
+  font-size: 100%;
+  width: 100%;
+  text-align: center;
+  
 }
 
 
 .titulo {
-  font-family: 'DotGothic16', sans-serif;
+  font-family: 'Bebas Neue', cursive;
   font-size: 90px;
+  font-weight: 950;
 }
 
 .tituloR {
-  font-family: "Bahnschrift SemiBold";
+  font-family: 'Bebas Neue', cursive;
   font-size: 90px;
   color: antiquewhite;
 }
 
 .tituloC {
-  font-family: "Bahnschrift SemiBold";
-  font-size: 90px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 400%;
   position: absolute;
   right: 0;
 }
 
 .parrafo {
-  font-family: "Lucida Sans Typewriter";
+  font-family: 'Jura', sans-serif;
   font-size: 25px;
 }
 
 .parrafoC {
-  font-family: "Lucida Sans Typewriter";
+  font-family:'Jura', sans-serif;
   font-size: 25px;
   color: bisque;
 }
@@ -79,7 +85,7 @@ footer {
   background-color:#fdd05a; 
 }
 .boton1{
-  font-family: "Lucida Sans Typewriter";
+  font-family: 'Jura', sans-serif;
   font-size: 1.5 rem;
   padding: 1.3rem;
   text-align: center;
@@ -90,7 +96,7 @@ footer {
   font-weight: 700;
 }
 .boton2{
-  font-family: "Lucida Sans Typewriter";
+  font-family: 'Jura', sans-serif;
   font-size: 1.5 rem;
   padding: 1.5 rem;
   text-align: center;
@@ -98,13 +104,13 @@ footer {
   text-decoration: none;
   color: #1c2529;
   background-color:#fdd05a; 
-  margin: 15px;
+  margin: 10px;
   font-weight: 700;
 }
 
 .centered{
   position: absolute;
-  top: 60%;
+  top: 68%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -132,8 +138,8 @@ footer {
 }
 
 .rectanguloR{
-  width: 400px;
-  height:200px;
+  width: 100%;
+  height:25%;
   background: #f1edc5;
 }
  .inputT {
