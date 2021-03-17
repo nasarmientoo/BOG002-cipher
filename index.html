@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <title>Captcha</title>
+</head>
+<body>
+ <section id = "section1">
+  <div class="split right"> 
+    <!--<img src = "x">-->
+  </div>
+  <div class="split left">
+    <h1 class = "titulo"> CAPTCHA </h1>
+    <p class="parrafo">Aqui podras cifrar o descifrar mensajes ocultos que quieras enviar o recibir</p>
+    <button class="boton1" id = "Boton1" >Continuar</button> 
+  </div>
+  </section>
+
+  <section id = "section2">
+    <div class="centeredR"> 
+      <h1 class = "titulo"> CAPTCHA </h1>
+      <!--<img src = "images/lock.png" class="logo">-->
+      <p class = "parrafo">¿Que quieres hacer hoy?</p>
+      <button id = "Boton2" class = "boton1" > Cifrar    </button>
+      <button id = "Boton3" class = "boton1" > Descifrar </button>
+    </div>    
+  </section>
+ 
+  <section id = "section3" class = "cipher">
+    <div class = "rectangulo">
+      <h1 class = "tituloC"> ENCODE </h1>
+    </div>
+    <div class="centered"> 
+      <p class="parrafoC"> Ingresa el mensaje que quieres descubrir</p>
+      <input type = "text" id = "input_men" class = "inputT"><br>
+      <p class="parrafoC"> Elige el desplazamiento de tu mensaje </p>
+      <input type ="number" id = "input_des" class = "inputD"><br>
+      <button id = "Boton4" class = "boton2">Encriptar mensaje </button><br>
+      <button id = "Boton5" class = "boton2">Volver</button>
+    </div>
+  </section>
+ 
+  <section id = "section4" class="cipher">
+  <div class = "rectangulo">
+    <h1 class = "tituloC"> DECODE </h1>
+  </div>
+    <div class="centered"> 
+      <p class="parrafoC" >Escribe el mensaje que quieres descifrar: </p>
+      <input type = "text" id ="input_men2" class = "inputT">
+      <p class="parrafoC" >Elige el desplazamiento </p>
+      <input type ="number" id = "input_des2" class = "inputD"><br>
+      <button id = "Boton6" class = "boton2">Descubrir mensaje</button><br>
+      <button id = "Boton7" class = "boton2">Volver</button>
+    </div>    
+  </section>
+  
+  <section id = "section5" class="cipher">
+    <div class="centeredR"> 
+      <h1 class = "tituloR"> CATPCHA </h1>
+      <p class = "parrafoC">Tu mensaje es:</p>
+      <div class = "rectanguloR">
+        <p id="mensajeFinal"></p>
+      </div>
+      <button id = "Boton8" class = "boton2" onclick="location.reload()" >Página principal</button>
+    </div>    
+  </section>
+
+<script type = "module" src="main.js"></script>
+<footer>Todos los derechos reservados &copy; Cipher NatSa</footer>
+</body>
+</html>

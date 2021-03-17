@@ -1,0 +1,155 @@
+#section1{
+  display: block; 
+  background-color: #fdd05a;
+  height: 100vh;    
+}
+
+#section2 {
+  display: block; 
+  text-align: center;
+  padding: 1rem;
+  background-color: #fdd05a;
+  height: 100vh;
+}
+
+#section3{
+  display: none
+}
+
+#section4{
+  display: none
+}
+
+#section5{
+  display: none
+}
+
+footer {
+  background-color:#dfac2b;
+  font-family: 'Jura', sans-serif;
+  font-size: 100%;
+  width: 100%;
+  text-align: center;
+  
+}
+
+
+.titulo {
+  font-family: 'Franklin Gothic Medium', cursive;
+  font-size: 90px;
+  font-weight: 950;
+}
+
+.tituloR {
+  font-family: 'Franklin Gothic Medium', cursive;
+  font-size: 90px;
+  color: antiquewhite;
+}
+
+.tituloC {
+  font-family: 'Franklin Gothic Medium', cursive;
+  font-size: 400%;
+  position: absolute;
+  right: 0;
+}
+
+.parrafo {
+  font-family: 'Jura', sans-serif;
+  font-size: 25px;
+}
+
+.parrafoC {
+  font-family:'Jura', sans-serif;
+  font-size: 25px;
+  color: bisque;
+}
+
+.split{
+  height:100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow: hidden;
+  padding-top: 90px;
+  padding-left: 100px;
+}
+
+.left{
+  left:0;
+  background-color:#fdd05a;
+}
+
+.right{
+  right:0;
+  background-color:#fdd05a; 
+}
+.boton1{
+  font-family: 'Jura', sans-serif;
+  font-size: 1.5 rem;
+  padding: 1.3rem;
+  text-align: center;
+  border: 0.1rem solid #000000;
+  text-decoration: none;
+  color: #fdd05a;
+  background-color:#000000; 
+  font-weight: 700;
+}
+.boton2{
+  font-family: 'Jura', sans-serif;
+  font-size: 1.5 rem;
+  padding: 1.5 rem;
+  text-align: center;
+  border: 0.4rem solid #fdd05a;
+  text-decoration: none;
+  color: #1c2529;
+  background-color:#fdd05a; 
+  margin: 10px;
+  font-weight: 700;
+}
+
+.centered{
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centeredR{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.cipher{
+  background-color: #1c2529;
+  height: 100vh;
+}
+
+.rectangulo{
+  width:100vw;
+  height:200px;
+  background: #fdd05a;
+}
+
+.rectanguloR{
+  width: 100%;
+  height:25%;
+  background: #f1edc5;
+}
+ .inputT {
+  padding: 8rem;
+  background: #f1edc5;
+  color: #1c2529;
+ }
+ .inputD {
+  padding: 1rem;
+  background: #f1edc5;
+  color:#1c2529;
+ }
+
